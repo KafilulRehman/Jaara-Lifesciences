@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jaara Lifesciences | Coming Soon</title>
+
+    <meta name="description"
+          content="Jaara Lifesciences - Pharmaceutical and healthcare solutions. Our website is coming soon.">
+
+    <meta name="theme-color" content="#0b6b50">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 85% 15%, rgba(28, 150, 112, 0.10), transparent 30%),
+                radial-gradient(circle at 10% 85%, rgba(28, 150, 112, 0.08), transparent 30%),
+                #ffffff;
+            color: #17352d;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            padding: 28px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            max-width: 245px;
+            width: auto;
+            height: auto;
+            display: block;
+        }
+
+        /* Main */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px 70px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        /* Decorative icon */
+        .medical-icon {
+            width: 78px;
+            height: 78px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: #e9f7f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .medical-icon::before,
+        .medical-icon::after {
+            content: "";
+            position: absolute;
+            background: #0b6b50;
+            border-radius: 4px;
+        }
+
+        .medical-icon::before {
+            width: 32px;
+            height: 9px;
+        }
+
+        .medical-icon::after {
+            width: 9px;
+            height: 32px;
+        }
+
+        .eyebrow {
+            color: #0b6b50;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 72px);
+            line-height: 1.08;
+            font-weight: 700;
+            color: #123d31;
+            margin-bottom: 22px;
+        }
+
+        h1 span {
+            color: #0b8b66;
+        }
+
+        .description {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #63746e;
+        }
+
+        /* Contact card */
+        .contact-card {
+            margin: 45px auto 0;
+            max-width: 680px;
+            padding: 25px 30px;
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid #e1eee9;
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(21, 70, 57, 0.07);
+        }
+
+        .contact-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0b6b50;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .email {
+            color: #17352d;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .email:hover {
+            color: #0b8b66;
+        }
+
+        .address {
+            margin-top: 12px;
+            color: #71817c;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            padding: 22px 20px 28px;
+            text-align: center;
+            color: #899691;
+            font-size: 13px;
+        }
+
+        .footer-line {
+            width: 45px;
+            height: 2px;
+            background: #0b8b66;
+            margin: 0 auto 15px;
+            border-radius: 2px;
+        }
+
+        /* Subtle animation */
+        .container {
+            animation: fadeUp 0.8s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 24px 20px;
+            }
+
+            .logo {
+                max-width: 200px;
+            }
+
+            main {
+                padding: 35px 20px 50px;
+            }
+
+            .medical-icon {
+                width: 68px;
+                height: 68px;
+                margin-bottom: 25px;
+            }
+
+            .eyebrow {
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .description {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .contact-card {
+                margin-top: 35px;
+                padding: 22px 18px;
+            }
+
+            .email {
+                font-size: 15px;
+            }
+
+            .address {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!--
+            IMPORTANT:
+            Put your Jaara Lifesciences logo in the same folder
+            and name it: logo.png
+
+            If your logo has another filename, change logo.png below.
+        -->
+        <img src="assets/jaara-logo-clean.jpg"
+             alt="Jaara Lifesciences"
+             class="logo">
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+            <div class="medical-icon"></div>
+
+            <div class="eyebrow">
+                Jaara Lifesciences
+            </div>
+
+            <h1>
+                Our Website<br>
+                <span>is Coming Soon</span>
+            </h1>
+
+            <p class="description">
+                We are currently working on our new website.
+                Jaara Lifesciences is committed to bringing
+                quality pharmaceutical and healthcare solutions.
+            </p>
+
+
+            <div class="contact-card">
+
+                <div class="contact-title">
+                    Get in Touch
+                </div>
+
+                <a href="mailto:customercare@jaaralifesciences.com"
+                   class="email">
+                    customercare@jaaralifesciences.com
+                </a>
+
+                <div class="address">
+                    PLOT NO 2B, FLAT NO A1, STREET NO 22,<br>
+                    ZAKIR NAGAR, JAMIA NAGAR,<br>
+                    NEW DELHI - 110025
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-line"></div>
+
+        © <span id="year"></span> Jaara Lifesciences.
+        All Rights Reserved.
+
+    </footer>
+
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
